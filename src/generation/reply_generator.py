@@ -27,7 +27,7 @@ from src.generation.voice_guidelines import get_voice_prompt_section  # noqa: E4
 _URL_RE = re.compile(r"https?://\S+")
 _PII_PATTERNS = re.compile(
     r"\b(password|credit card|card number|ssn|social security|"
-    r"bank account|routing number|cvv|pin number)\b",
+    r"bank account|routing number|cvv|pin number|account details|credentials)\b",
     re.IGNORECASE,
 )
 _POLICY_FABRICATION_PATTERNS = re.compile(
@@ -177,7 +177,14 @@ def generate_reply(
     )
 
     # Generate
-    raw_reply = _generate_llm(prompt, provider, model)
+    raw_reply = _generate_llm(
+        prompt=prompt,
+        provider=provider,
+        model=model,
+        customer_message=customer_message,
+        classification=classification,
+        retrieved=retrieved,
+    )
 
     # Safety check
     safety = _safety_check(raw_reply, retrieved)
@@ -213,17 +220,24 @@ def generate_reply(
     }
 
 
-def _generate_llm(prompt: str, provider: str, model: str) -> str:
+def _generate_llm(
+    prompt: str,
+    provider: str,
+    model: str,
+    customer_message: str = "",
+    classification: dict | None = None,
+    retrieved: list[dict] | None = None,
+) -> str:
     """Call the LLM API to generate a reply."""
     if provider == "openai":
         try:
             from openai import OpenAI
         except ImportError:
-            return _template_fallback(prompt)
+            return _template_fallback(customer_message, classification, retrieved)
 
         api_key = config.LLM_API_KEY or os.getenv("OPENAI_API_KEY", "")
         if not api_key:
-            return _template_fallback(prompt)
+            return _template_fallback(customer_message, classification, retrieved)
 
         try:
             client = OpenAI(api_key=api_key)
@@ -238,25 +252,67 @@ def _generate_llm(prompt: str, provider: str, model: str) -> str:
             )
             return response.choices[0].message.content.strip()
         except Exception:
-            return _template_fallback(prompt)
+            return _template_fallback(customer_message, classification, retrieved)
     else:
         # Fallback: template-based response for testing
-        return _template_fallback(prompt)
+        return _template_fallback(customer_message, classification, retrieved)
 
 
-def _template_fallback(prompt: str) -> str:
-    """Template-based reply for testing without API access."""
-    # Extract some context from the prompt to make it slightly dynamic
-    if "crash" in prompt.lower() or "freeze" in prompt.lower():
+def _template_fallback(
+    customer_message: str = "",
+    classification: dict | None = None,
+    retrieved: list[dict] | None = None,
+) -> str:
+    """Template-based grounded reply for testing without API access."""
+    classification = classification or {}
+    route = classification.get("route", "support")
+    domain = classification.get("domain")
+    risk_flag = classification.get("risk_flag", "none")
+    msg_lower = (customer_message or "").lower()
+
+    if route == "feedback":
+        return "You're very welcome! Let us know if you ever need anything else. Have a wonderful day! /AI"
+
+    if route == "abuse_spam":
+        return "We're here if you have any Spotify questions or issues we can help sort out. /AI"
+
+    # Support route: check risk first
+    if risk_flag == "security":
+        return "We take account security very seriously. Please reach out via private DM so our security specialists can assist you directly /AI"
+    elif risk_flag == "legal":
+        return "Please send us a private DM with your inquiry so we can connect you with our specialized support team /AI"
+    elif risk_flag == "payment_dispute":
+        return "We understand your billing concern. Please send us a private DM so we can verify your account and review this charge /AI"
+    elif risk_flag == "repeated_contact":
+        return "We apologize for the ongoing trouble! Could you DM us so a support specialist can step in and resolve this for you? /AI"
+
+    # Domain specific grounded replies
+    if domain == "app_device":
         return "Hi there! Sorry to hear that. Can you try logging out, restarting your device, and logging back in? Let us know how it goes /AI"
-    elif "play" in prompt.lower() or "skip" in prompt.lower() or "song" in prompt.lower():
-        return "We'd like to help! What device and Spotify version are you using? Keep us posted /AI"
-    elif "account" in prompt.lower() or "login" in prompt.lower():
-        return "We're here to help! Send us a DM with your account details and we'll look into it /AI"
-    elif "charge" in prompt.lower() or "bill" in prompt.lower() or "refund" in prompt.lower():
-        return "We understand your concern. Please send us a DM so we can look into this privately /AI"
-    else:
-        return DM_FALLBACK_TEMPLATE
+    elif domain == "playback":
+        return "We'd love to help! Could you let us know what device, OS, and Spotify version you're currently running? /AI"
+    elif domain == "content":
+        return "Music availability can vary by region or licensing agreements. Which song or artist are you looking for? /AI"
+    elif domain == "how_to":
+        return "Happy to help! Check out support.spotify.com for step-by-step guides, or let us know what specific feature you're looking for /AI"
+    elif domain == "billing":
+        return "We understand your billing question. Please check spotify.com/account or send us a private DM so we can take a closer look /AI"
+    elif domain == "account":
+        return "We're here to help! You can reset your password at spotify.com/password-reset or send us a private DM if you need more help /AI"
+
+    # If top retrieved pattern exists and is safe
+    if retrieved and len(retrieved) > 0:
+        top_resp = retrieved[0].get("agent_response", "").strip()
+        if (
+            top_resp
+            and len(top_resp) <= config.TWITTER_CHAR_LIMIT
+            and not any(p in top_resp.lower() for p in ["account details", "password", "credit card"])
+        ):
+            if not top_resp.endswith("/AI"):
+                top_resp = re.sub(r"\s*/[A-Z]{2,3}$", "", top_resp) + " /AI"
+            return top_resp
+
+    return DM_FALLBACK_TEMPLATE
 
 
 # ── CLI ──────────────────────────────────────────────────────────────────────

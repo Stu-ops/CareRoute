@@ -17,10 +17,10 @@ EVAL_DATA_DIR = DATA_DIR / "eval"
 RESULTS_DIR = PROJECT_ROOT / "results"
 
 # ─── Raw Dataset ─────────────────────────────────────────────────────────────
-TWCS_CSV_PATH = os.getenv(
-    "TWCS_CSV_PATH",
-    str(PROJECT_ROOT / "Dataset_1" / "twcs" / "twcs.csv"),
-)
+_raw_candidate = PROJECT_ROOT / "Dataset" / "twcs" / "twcs.csv"
+if not _raw_candidate.exists():
+    _raw_candidate = PROJECT_ROOT / "Dataset_1" / "twcs" / "twcs.csv"
+TWCS_CSV_PATH = Path(os.getenv("TWCS_CSV_PATH", str(_raw_candidate)))
 TARGET_BRAND = os.getenv("TARGET_BRAND", "SpotifyCares")
 
 # ─── Processed Data ──────────────────────────────────────────────────────────

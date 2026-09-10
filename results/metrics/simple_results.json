@@ -8,7 +8,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2835,
+      "confidence": 0.3316,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -43,7 +43,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.3315,
+      "confidence": 0.3115,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -76,9 +76,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.3902,
+      "confidence": 0.3189,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -113,7 +113,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.302,
+      "confidence": 0.3786,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -148,7 +148,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2733,
+      "confidence": 0.3515,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -183,7 +183,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4306,
+      "confidence": 0.5008,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -218,7 +218,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3281,
+      "confidence": 0.4174,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -253,7 +253,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2577,
+      "confidence": 0.3299,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -288,7 +288,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2128,
+      "confidence": 0.287,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -323,7 +323,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "repeated_contact",
-      "confidence": 0.2821,
+      "confidence": 0.2847,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -358,7 +358,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2969,
+      "confidence": 0.2778,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -393,7 +393,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3006,
+      "confidence": 0.3671,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -428,7 +428,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2674,
+      "confidence": 0.3139,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -461,9 +461,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.5551,
+      "confidence": 0.3462,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -498,7 +498,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.3857,
+      "confidence": 0.4517,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -533,7 +533,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.3205,
+      "confidence": 0.4243,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -568,7 +568,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3372,
+      "confidence": 0.3853,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -603,7 +603,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2678,
+      "confidence": 0.3057,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -638,7 +638,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3076,
+      "confidence": 0.4034,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -673,7 +673,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2923,
+      "confidence": 0.3493,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -708,7 +708,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3058,
+      "confidence": 0.3651,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -741,9 +741,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.4041,
+      "confidence": 0.3409,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -776,9 +776,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.3985,
+      "confidence": 0.3361,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -813,7 +813,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2916,
+      "confidence": 0.3749,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -848,7 +848,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2614,
+      "confidence": 0.3538,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -883,7 +883,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.237,
+      "confidence": 0.2392,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -918,7 +918,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2624,
+      "confidence": 0.3612,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -951,9 +951,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.1974,
+      "confidence": 0.2426,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -988,7 +988,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2712,
+      "confidence": 0.4709,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1023,7 +1023,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3019,
+      "confidence": 0.3996,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1056,9 +1056,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2348,
+      "confidence": 0.2705,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1093,7 +1093,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2729,
+      "confidence": 0.3536,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1128,7 +1128,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2906,
+      "confidence": 0.3871,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1163,7 +1163,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.6976,
+      "confidence": 0.7584,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1198,7 +1198,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5931,
+      "confidence": 0.7229,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1233,7 +1233,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5406,
+      "confidence": 0.6535,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1268,7 +1268,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3318,
+      "confidence": 0.4421,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1303,7 +1303,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3318,
+      "confidence": 0.3099,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1338,7 +1338,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3004,
+      "confidence": 0.3466,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1373,7 +1373,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.3236,
+      "confidence": 0.3868,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1408,7 +1408,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2233,
+      "confidence": 0.268,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1443,7 +1443,7 @@
       "route": "support",
       "domain": "content",
       "risk_flag": "legal",
-      "confidence": 0.254,
+      "confidence": 0.2908,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1478,7 +1478,7 @@
       "route": "support",
       "domain": "app_device",
       "risk_flag": "legal",
-      "confidence": 0.2992,
+      "confidence": 0.409,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1511,9 +1511,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3934,
+      "confidence": 0.2491,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1546,9 +1546,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4738,
+      "confidence": 0.3847,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1581,9 +1581,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2975,
+      "confidence": 0.3123,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1618,7 +1618,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.3366,
+      "confidence": 0.4199,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1653,7 +1653,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.3158,
+      "confidence": 0.3368,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1688,7 +1688,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2686,
+      "confidence": 0.2794,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1721,9 +1721,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.5569,
+      "confidence": 0.3576,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1758,7 +1758,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.307,
+      "confidence": 0.3347,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1793,7 +1793,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3378,
+      "confidence": 0.386,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1826,9 +1826,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.4582,
+      "confidence": 0.3045,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1863,7 +1863,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.3533,
+      "confidence": 0.3934,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1896,9 +1896,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4793,
+      "confidence": 0.2564,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1933,7 +1933,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2954,
+      "confidence": 0.4092,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -1968,7 +1968,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3351,
+      "confidence": 0.3695,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2003,7 +2003,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3311,
+      "confidence": 0.4917,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2038,7 +2038,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "repeated_contact",
-      "confidence": 0.3435,
+      "confidence": 0.4526,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2073,7 +2073,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2799,
+      "confidence": 0.3357,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2108,7 +2108,7 @@
       "route": "support",
       "domain": "how_to",
       "risk_flag": "payment_dispute",
-      "confidence": 0.2337,
+      "confidence": 0.2738,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2141,9 +2141,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2253,
+      "confidence": 0.2587,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2178,7 +2178,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2961,
+      "confidence": 0.3281,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2213,7 +2213,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2601,
+      "confidence": 0.3226,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2248,7 +2248,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2577,
+      "confidence": 0.3499,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2283,7 +2283,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2543,
+      "confidence": 0.3106,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2318,7 +2318,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2669,
+      "confidence": 0.3015,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2353,7 +2353,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2895,
+      "confidence": 0.3056,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2388,7 +2388,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2336,
+      "confidence": 0.2552,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2423,7 +2423,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3872,
+      "confidence": 0.386,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2458,7 +2458,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2754,
+      "confidence": 0.3745,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2493,7 +2493,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2958,
+      "confidence": 0.3318,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2528,7 +2528,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.2398,
+      "confidence": 0.3165,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2563,7 +2563,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3108,
+      "confidence": 0.3248,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2598,7 +2598,7 @@
       "route": "support",
       "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.3402,
+      "confidence": 0.4965,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2631,9 +2631,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.6711,
+      "confidence": 0.7746,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2668,7 +2668,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4285,
+      "confidence": 0.5501,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2701,9 +2701,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3784,
+      "confidence": 0.3342,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2738,7 +2738,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.367,
+      "confidence": 0.4674,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2773,7 +2773,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.3409,
+      "confidence": 0.4446,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2808,7 +2808,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3283,
+      "confidence": 0.3932,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2843,7 +2843,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2682,
+      "confidence": 0.3754,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2878,7 +2878,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2616,
+      "confidence": 0.3677,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2913,7 +2913,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3378,
+      "confidence": 0.4057,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2948,7 +2948,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.56,
+      "confidence": 0.7015,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -2981,9 +2981,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.2678,
+      "confidence": 0.392,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3018,7 +3018,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.3231,
+      "confidence": 0.4289,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3053,7 +3053,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2307,
+      "confidence": 0.2947,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3088,7 +3088,7 @@
       "route": "support",
       "domain": "content",
       "risk_flag": "legal",
-      "confidence": 0.2844,
+      "confidence": 0.2984,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3123,7 +3123,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.2662,
+      "confidence": 0.323,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3158,7 +3158,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2589,
+      "confidence": 0.2767,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3193,7 +3193,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.474,
+      "confidence": 0.5379,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3228,7 +3228,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2927,
+      "confidence": 0.3666,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3261,9 +3261,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "repeated_contact",
-      "confidence": 0.4158,
+      "confidence": 0.3822,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3298,7 +3298,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2998,
+      "confidence": 0.3535,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3331,9 +3331,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2523,
+      "confidence": 0.2881,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3368,7 +3368,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3483,
+      "confidence": 0.4024,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3401,9 +3401,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3437,
+      "confidence": 0.358,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3438,7 +3438,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.3307,
+      "confidence": 0.3184,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3473,7 +3473,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2744,
+      "confidence": 0.3016,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3508,7 +3508,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2384,
+      "confidence": 0.3249,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3543,7 +3543,7 @@
       "route": "support",
       "domain": "account",
       "risk_flag": "none",
-      "confidence": 0.687,
+      "confidence": 0.3363,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3576,9 +3576,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2678,
+      "confidence": 0.283,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3611,9 +3611,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.252,
+      "confidence": 0.3255,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3646,9 +3646,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2531,
+      "confidence": 0.2648,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3683,7 +3683,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2679,
+      "confidence": 0.2616,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3718,7 +3718,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.2548,
+      "confidence": 0.4183,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3753,7 +3753,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3282,
+      "confidence": 0.386,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3788,7 +3788,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2402,
+      "confidence": 0.2996,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3823,7 +3823,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3177,
+      "confidence": 0.3964,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3858,7 +3858,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2674,
+      "confidence": 0.3507,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3893,7 +3893,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.354,
+      "confidence": 0.3808,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3928,7 +3928,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.342,
+      "confidence": 0.4459,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3963,7 +3963,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2298,
+      "confidence": 0.2771,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -3996,9 +3996,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.4099,
+      "confidence": 0.512,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4031,9 +4031,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.5064,
+      "confidence": 0.749,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4068,7 +4068,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.2908,
+      "confidence": 0.3881,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4103,7 +4103,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2689,
+      "confidence": 0.2972,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4136,9 +4136,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.337,
+      "confidence": 0.3752,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4173,7 +4173,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.4444,
+      "confidence": 0.5898,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4206,9 +4206,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3072,
+      "confidence": 0.2541,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4243,7 +4243,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5315,
+      "confidence": 0.6228,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4276,9 +4276,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "app_device",
       "risk_flag": "legal",
-      "confidence": 0.2705,
+      "confidence": 0.3792,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4311,9 +4311,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.6711,
+      "confidence": 0.7746,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4346,9 +4346,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3111,
+      "confidence": 0.3389,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4383,7 +4383,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2876,
+      "confidence": 0.3799,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4416,9 +4416,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "billing",
+      "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2757,
+      "confidence": 0.267,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4453,7 +4453,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.7804,
+      "confidence": 0.8542,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4488,7 +4488,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3604,
+      "confidence": 0.523,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4521,9 +4521,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3268,
+      "confidence": 0.2663,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4558,7 +4558,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.34,
+      "confidence": 0.3748,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4593,7 +4593,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3429,
+      "confidence": 0.3749,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4628,7 +4628,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.267,
+      "confidence": 0.3164,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4663,7 +4663,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3097,
+      "confidence": 0.3395,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4696,9 +4696,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.3964,
+      "confidence": 0.2184,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4733,7 +4733,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2101,
+      "confidence": 0.2669,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4768,7 +4768,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2929,
+      "confidence": 0.3625,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4803,7 +4803,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3151,
+      "confidence": 0.4483,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4836,9 +4836,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "app_device",
       "risk_flag": "legal",
-      "confidence": 0.2239,
+      "confidence": 0.2968,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4871,9 +4871,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "repeated_contact",
-      "confidence": 0.3658,
+      "confidence": 0.3739,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4908,7 +4908,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2669,
+      "confidence": 0.2945,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4943,7 +4943,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3078,
+      "confidence": 0.4049,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -4978,7 +4978,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3035,
+      "confidence": 0.3098,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5011,9 +5011,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "billing",
       "risk_flag": "repeated_contact",
-      "confidence": 0.2412,
+      "confidence": 0.3445,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5046,9 +5046,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2705,
+      "confidence": 0.2704,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5081,9 +5081,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.2544,
+      "confidence": 0.337,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5118,7 +5118,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2922,
+      "confidence": 0.3387,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5153,7 +5153,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3472,
+      "confidence": 0.4524,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5186,9 +5186,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.4338,
+      "confidence": 0.2951,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5223,7 +5223,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3864,
+      "confidence": 0.5421,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5258,7 +5258,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.446,
+      "confidence": 0.5468,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5293,7 +5293,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2754,
+      "confidence": 0.2717,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5328,7 +5328,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.409,
+      "confidence": 0.5171,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5363,7 +5363,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.257,
+      "confidence": 0.3644,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5398,7 +5398,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4448,
+      "confidence": 0.5152,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5433,7 +5433,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3638,
+      "confidence": 0.4185,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5468,7 +5468,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2536,
+      "confidence": 0.2993,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5503,7 +5503,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2973,
+      "confidence": 0.3518,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5536,9 +5536,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2035,
+      "confidence": 0.2243,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5571,9 +5571,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5513,
+      "confidence": 0.804,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5606,9 +5606,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.6417,
+      "confidence": 0.6828,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5641,9 +5641,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.3091,
+      "confidence": 0.4386,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5676,9 +5676,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "playback",
+      "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.2134,
+      "confidence": 0.2618,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5711,9 +5711,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3546,
+      "confidence": 0.3137,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5746,9 +5746,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2459,
+      "confidence": 0.4062,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5783,7 +5783,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2469,
+      "confidence": 0.2446,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5818,7 +5818,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2636,
+      "confidence": 0.3018,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5853,7 +5853,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3569,
+      "confidence": 0.4424,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5886,9 +5886,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.4552,
+      "confidence": 0.2834,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5923,7 +5923,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3882,
+      "confidence": 0.4715,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5958,7 +5958,7 @@
       "route": "support",
       "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.3726,
+      "confidence": 0.4789,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -5991,9 +5991,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "security",
-      "confidence": 0.5774,
+      "confidence": 0.2937,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6026,9 +6026,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4964,
+      "confidence": 0.6943,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6063,7 +6063,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.279,
+      "confidence": 0.3081,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6096,9 +6096,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "repeated_contact",
-      "confidence": 0.2438,
+      "confidence": 0.3216,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6133,7 +6133,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.2669,
+      "confidence": 0.3632,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6166,9 +6166,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5513,
+      "confidence": 0.804,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6201,9 +6201,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.5294,
+      "confidence": 0.3218,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6236,9 +6236,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.3433,
+      "confidence": 0.4956,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6273,7 +6273,7 @@
       "route": "support",
       "domain": "how_to",
       "risk_flag": "none",
-      "confidence": 0.3314,
+      "confidence": 0.3907,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6308,7 +6308,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.2739,
+      "confidence": 0.4176,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6343,7 +6343,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3368,
+      "confidence": 0.3945,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6378,7 +6378,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3355,
+      "confidence": 0.4433,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6413,7 +6413,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2928,
+      "confidence": 0.3005,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6448,7 +6448,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3196,
+      "confidence": 0.3445,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6483,7 +6483,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4038,
+      "confidence": 0.4908,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6518,7 +6518,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "security",
-      "confidence": 0.2947,
+      "confidence": 0.3953,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6551,9 +6551,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "none",
-      "confidence": 0.3316,
+      "confidence": 0.5065,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6588,7 +6588,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.4628,
+      "confidence": 0.51,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6623,7 +6623,7 @@
       "route": "support",
       "domain": "app_device",
       "risk_flag": "none",
-      "confidence": 0.2947,
+      "confidence": 0.4575,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6656,9 +6656,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "billing",
       "risk_flag": "legal",
-      "confidence": 0.2452,
+      "confidence": 0.2749,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6693,7 +6693,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2866,
+      "confidence": 0.299,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6728,7 +6728,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3064,
+      "confidence": 0.3523,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6761,9 +6761,9 @@
     },
     "classification": {
       "route": "support",
-      "domain": "account",
+      "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.5513,
+      "confidence": 0.804,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6798,7 +6798,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3215,
+      "confidence": 0.3317,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6833,7 +6833,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "legal",
-      "confidence": 0.2859,
+      "confidence": 0.2875,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6868,7 +6868,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.3173,
+      "confidence": 0.4247,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6903,7 +6903,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2658,
+      "confidence": 0.2887,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6938,7 +6938,7 @@
       "route": "support",
       "domain": "playback",
       "risk_flag": "none",
-      "confidence": 0.2813,
+      "confidence": 0.3346,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {
@@ -6973,7 +6973,7 @@
       "route": "support",
       "domain": "billing",
       "risk_flag": "payment_dispute",
-      "confidence": 0.3517,
+      "confidence": 0.5653,
       "reasoning": "Simple baseline: TF-IDF + Logistic Regression + keyword risk"
     },
     "retrieval": {

@@ -107,6 +107,8 @@ def run_evaluation(cached: bool = True):
         "--output", str(config.RESULTS_DIR / "metrics"),
         "--systems", "trivial", "simple", "full",
     ]
+    if not cached:
+        sys.argv.append("--force-refresh")
     run_eval_main()
 
 
@@ -186,7 +188,7 @@ def main():
     run_data_pipeline()
 
     # Run evaluation
-    run_evaluation(cached=args.cached)
+    run_evaluation(cached=(not args.live))
 
     elapsed = time.time() - start
     print(f"\n{'='*60}")

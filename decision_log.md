@@ -71,3 +71,19 @@ Many valid replies exist for one customer tweet. BLEU/ROUGE reward lexical overl
 - **Production deployment:** Not asked for; CLI pipeline suffices.
 - **Official Spotify docs integration:** Outside dataset scope (noted as "next week" improvement).
 - **Sentiment model training:** Off-the-shelf VADER suffices for escalation signal.
+
+## 15. Word-boundary regex isolation and contextual disambiguation
+
+Early naive regexes caused severe false-positive label contamination:
+- Substring `"sue"` matched `"issue"` across technical questions, misclassifying routine playback problems as `legal` risk.
+- Keyword `"stranger"` matched user discussions of `"Stranger Things Mode"` (a Spotify easter egg feature), misclassifying playlist queries as account takeover `security` risks.
+- Generic keyword matching on prompt template headers contaminated fallback routing.
+
+**Resolution:** Enforced strict word boundaries (`\bsue\b`, `\blawsuit\b`), explicitly isolated contextual mentions (e.g., negative lookahead for "Stranger Things"), and restricted fallback classifiers to inspect structured payload fields rather than prompt strings.
+
+## 16. Multi-factor versioned caching policy and live bypass
+
+Reproduction runs must be instantaneous (< 15 seconds) and deterministic without incurring unexpected API billing. However, naive single-factor caching (e.g. hashing only customer text) failed to reflect parameter modifications such as retrieval count $k$, thread history context, prompt versioning, or `--live` overrides.
+
+**Resolution:** Built an explicit multi-factor cache key combining `cache_version`, `provider`, `model`, retrieval depth `k`, `thread_id`, `thread_context`, and cleaned query text. Added explicit `--live` and `--force-refresh` flags to guarantee that evaluators can switch between instant verified cache inspection and completely un-cached real-time execution.
+

@@ -1,4 +1,4 @@
-# Labeling Notes & Evaluation Sets
+# Labeling Notes & Evaluation Sets (Audited)
 
 This document details the curation, stratification, and quality control methodology used for the evaluation label sets.
 
@@ -13,47 +13,50 @@ This document details the curation, stratification, and quality control methodol
 ## Class Distribution (Golden Test Set, N=200)
 
 ### Layer 1: Route
+```json
 {
-  "feedback": 8,
-  "support": 186,
-  "abuse_spam": 6
+  "support": 190,
+  "feedback": 7,
+  "abuse_spam": 3
 }
+```
 
 ### Layer 2: Domain (Support Route)
+```json
 {
-  "billing": 36,
-  "playback": 54,
-  "app_device": 20,
-  "content": 19,
-  "how_to": 16,
-  "account": 41
+  "playback": 66,
+  "billing": 45,
+  "app_device": 27,
+  "content": 20,
+  "how_to": 17,
+  "account": 15
 }
+```
 
 ### Layer 3: Risk Flag
+```json
 {
-  "none": 79,
-  "security": 22,
-  "repeated_contact": 42,
-  "legal": 32,
-  "unclear": 13,
-  "payment_dispute": 12
+  "none": 110,
+  "security": 11,
+  "repeated_contact": 56,
+  "unclear": 12,
+  "payment_dispute": 11
 }
+```
 
 ### Escalation Decisions
+```json
 {
-  "auto_handle": 79,
-  "escalate": 108,
-  "clarify": 13
+  "auto_handle": 110,
+  "escalate": 78,
+  "clarify": 12
 }
+```
 
-## Stratification & Sampling Methodology
+## Quality Control & Systematic Audit Changelog
 
-1. **Thread-Level Isolation**: Candidate examples were drawn strictly from the corresponding temporal split in `manifest.json`. No conversation thread spans multiple splits.
-2. **Inbound Tweet Selection**: Only genuine customer inbound queries with meaningful content (>=15 characters) were selected.
-3. **Multi-Turn Representation**: Includes threads across a wide spectrum of lengths (from 2-turn single exchanges to >=5 turn back-and-forth threads) to test `repeated_contact` detection.
-4. **Adherence to Written Policy**: Labels follow `docs/taxonomy.md` and `docs/escalation_policy.md` deterministically.
-
-## Quality Control & Consistency
-
-- **Disambiguation Rules Applied**: Sarcasm and frustration without profanity were maintained as `route: support`.
-- **Intra-Annotator Consistency**: A 50-example subset re-annotated blindly achieved 96% route agreement and 92% escalation decision agreement, confirming policy clarity.
+During comprehensive codebase review, systematic keyword false-positives were audited and corrected:
+1. **Word-Boundary Isolation on Legal Terms**: Previously, substring matching for `sue` triggered on words like `issue` (e.g. "playlist issue", "offline issue", "billing issue"), mislabeling technical support queries as `legal` risk. Replaced with word-bounded `\bsue\b` and explicit legal terminology (`lawyer`, `lawsuit`, `subpoena`, `gdpr`).
+2. **Account Security Disambiguation**: Previously, substring matching for `stranger` triggered on mentions of `"Stranger Things Mode"` setting or themed playlists, mislabeling content and device issues as `security`. Replaced with explicit account compromise patterns (`hack`, `unauthorized access`, `unauthorized login`, `account takeover`).
+3. **Downloads & Offline Routing**: Mapped downloads, offline sync, and storage issues to `app_device` rather than `how_to`.
+4. **Billing vs Payment Dispute**: Standard billing queries (student discount verification, subscription renewal) are classified under `domain: billing` with `risk_flag: none` (auto-handled with guidance to `spotify.com/account`), while double charges and unauthorized transactions escalate as `risk_flag: payment_dispute`.

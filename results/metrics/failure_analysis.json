@@ -1,0 +1,51 @@
+{
+  "domain_errors": {
+    "playback": {
+      "total": 66,
+      "correct": 9
+    },
+    "billing": {
+      "total": 45,
+      "correct": 27
+    },
+    "app_device": {
+      "total": 27,
+      "correct": 11
+    },
+    "content": {
+      "total": 20,
+      "correct": 6
+    },
+    "how_to": {
+      "total": 17,
+      "correct": 11
+    },
+    "account": {
+      "total": 15,
+      "correct": 14
+    }
+  },
+  "risk_misclassifications": [],
+  "escalation_false_negatives": [
+    {
+      "text": "@user Sorted, thanks! Took over an hour and several different devices, but done. Kept receiving a server error. Thanks f",
+      "gold_risk": "repeated_contact",
+      "pred_risk": "none",
+      "pred_reason": "Positive/neutral feedback -- acknowledge only"
+    },
+    {
+      "text": "@user I surely will \ud83d\ude01 Amazing music! \ud83d\ude0d",
+      "gold_risk": "repeated_contact",
+      "pred_risk": "none",
+      "pred_reason": "Positive/neutral feedback -- acknowledge only"
+    }
+  ],
+  "domain_accuracy": {
+    "playback": 0.1364,
+    "billing": 0.6,
+    "app_device": 0.4074,
+    "content": 0.3,
+    "how_to": 0.6471,
+    "account": 0.9333
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "k_3": {
+    "retrieval_k": 3,
+    "route_macro_f1": 0.5246,
+    "domain_macro_f1": 0.4319,
+    "escalation_recall": 0.9821,
+    "escalation_fnr": 0.0179,
+    "grounding_score": 0.7417
+  },
+  "k_5": {
+    "retrieval_k": 5,
+    "route_macro_f1": 0.5246,
+    "domain_macro_f1": 0.4319,
+    "escalation_recall": 0.9821,
+    "escalation_fnr": 0.0179,
+    "grounding_score": 0.7417
+  },
+  "k_10": {
+    "retrieval_k": 10,
+    "route_macro_f1": 0.5246,
+    "domain_macro_f1": 0.4319,
+    "escalation_recall": 0.9821,
+    "escalation_fnr": 0.0179,
+    "grounding_score": 0.7417
+  }
+}

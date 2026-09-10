@@ -120,6 +120,9 @@ def plot_coverage_risk(curve_data: dict, output_path: str | Path | None = None):
     plt.close()
 
 
+plot_coverage_risk_curve = plot_coverage_risk
+
+
 if __name__ == "__main__":
     # Demo with synthetic data
     np.random.seed(42)

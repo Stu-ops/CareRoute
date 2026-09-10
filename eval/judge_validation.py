@@ -98,14 +98,15 @@ def validate_rubric_alignment(human_ratings: list[dict], judge_ratings: list[dic
     Returns:
         dict with per-dimension Pearson and Spearman correlations + mean overall.
     """
-    dimensions = ["relevance", "actionability", "brand_voice", "safety", "evidence_supportedness"]
+    dimensions = ["relevance", "actionability", "brand_voice", "safety_privacy", "evidence_supportedness"]
     report = {}
     spearman_scores = []
     pearson_scores = []
 
     for dim in dimensions:
-        h_vals = [float(h.get(dim, 3.0)) for h in human_ratings]
-        j_vals = [float(j.get(dim, 3.0)) for j in judge_ratings]
+        alt_dim = "safety" if dim == "safety_privacy" else dim
+        h_vals = [float(h.get(dim, h.get(alt_dim, 3.0))) for h in human_ratings]
+        j_vals = [float(j.get(dim, j.get(alt_dim, 3.0))) for j in judge_ratings]
 
         if len(h_vals) >= 2:
             p_corr = _pearson_correlation(h_vals, j_vals)

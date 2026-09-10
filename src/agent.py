@@ -61,9 +61,19 @@ class SpotifyCaresAgent:
                 self._collection = None
         return self._collection
 
-    def _cache_key(self, text: str) -> str:
-        """Generate a deterministic cache key for a message."""
-        return hashlib.md5(text.encode("utf-8")).hexdigest()
+    def _cache_key(
+        self,
+        text: str,
+        thread_id: str | None = None,
+        thread_context: str = "",
+        model: str = "",
+        provider: str = "",
+        k: int | None = None,
+        version: str = "v2_rag_grounded",
+    ) -> str:
+        """Generate a deterministic multi-factor cache key."""
+        payload = f"{version}|{provider}|{model}|{k}|{thread_id or 'none'}|{thread_context}|{text}"
+        return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     def _load_cached(self, key: str) -> dict | None:
         """Load cached result if available."""
@@ -89,6 +99,7 @@ class SpotifyCaresAgent:
         thread_id: str | None = None,
         thread_context: str = "",
         thread_length: int = 1,
+        force_refresh: bool = False,
     ) -> dict:
         """
         Process a customer tweet through the full agent pipeline.
@@ -98,20 +109,24 @@ class SpotifyCaresAgent:
             thread_id: Thread ID for leakage prevention in retrieval.
             thread_context: Earlier messages in the thread (for classification context).
             thread_length: Number of messages in the thread.
+            force_refresh: Whether to bypass and overwrite the cache.
 
         Returns:
-            dict with keys:
-              input: {raw_text, clean_text, thread_id}
-              classification: {route, domain, risk_flag, confidence, reasoning}
-              retrieval: {results, evidence_strength, k}
-              generation: {reply, safety_check, fallback_used, reason}
-              escalation: {decision, confidence, reason, policy_rule_matched}
+            dict with keys: input, classification, retrieval, generation, escalation
         """
         # Check cache
-        cache_key = self._cache_key(tweet_text)
-        cached = self._load_cached(cache_key)
-        if cached:
-            return cached
+        cache_key = self._cache_key(
+            text=tweet_text,
+            thread_id=thread_id,
+            thread_context=thread_context,
+            model=config.LLM_MODEL,
+            provider=config.LLM_PROVIDER,
+            k=self.retrieval_k,
+        )
+        if not force_refresh:
+            cached = self._load_cached(cache_key)
+            if cached:
+                return cached
 
         # 1. Preprocess
         cleaned = clean_text(tweet_text)
@@ -155,6 +170,7 @@ class SpotifyCaresAgent:
                 "raw_text": tweet_text,
                 "clean_text": cleaned,
                 "thread_id": thread_id,
+                "thread_context": thread_context,
                 "thread_length": thread_length,
             },
             "classification": classification,

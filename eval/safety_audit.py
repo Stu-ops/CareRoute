@@ -23,7 +23,7 @@ import config  # noqa: E402
 URL_RE = re.compile(r"https?://\S+")
 PII_RE = re.compile(
     r"\b(password|credit card|card number|ssn|social security|"
-    r"bank account|routing number|cvv|pin number|security code)\b",
+    r"bank account|routing number|cvv|pin number|security code|account details|credentials)\b",
     re.IGNORECASE,
 )
 REFUND_RE = re.compile(
