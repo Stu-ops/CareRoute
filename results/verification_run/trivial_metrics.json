@@ -1,0 +1,300 @@
+{
+  "route_classification": {
+    "label_name": "route",
+    "n_examples": 200,
+    "accuracy": 0.93,
+    "accuracy_ci": [
+      0.895,
+      0.965
+    ],
+    "macro_f1": 0.3212,
+    "cohen_kappa": 0.0,
+    "per_class": {
+      "abuse_spam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 6.0
+      },
+      "feedback": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 8.0
+      },
+      "support": {
+        "precision": 0.93,
+        "recall": 1.0,
+        "f1-score": 0.9637,
+        "support": 186.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "abuse_spam",
+        "feedback",
+        "support"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          186
+        ]
+      ]
+    }
+  },
+  "domain_classification": {
+    "label_name": "domain",
+    "n_examples": 186,
+    "accuracy": 0.2903,
+    "accuracy_ci": [
+      0.2258,
+      0.3602
+    ],
+    "macro_f1": 0.075,
+    "cohen_kappa": 0.0,
+    "per_class": {
+      "account": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 41.0
+      },
+      "app_device": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 20.0
+      },
+      "billing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 36.0
+      },
+      "content": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 19.0
+      },
+      "how_to": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "playback": {
+        "precision": 0.2903,
+        "recall": 1.0,
+        "f1-score": 0.45,
+        "support": 54.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "account",
+        "app_device",
+        "billing",
+        "content",
+        "how_to",
+        "playback"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          41
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          36
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          54
+        ]
+      ]
+    }
+  },
+  "risk_classification": {
+    "label_name": "risk_flag",
+    "n_examples": 200,
+    "accuracy": 0.395,
+    "accuracy_ci": [
+      0.33,
+      0.47
+    ],
+    "macro_f1": 0.0944,
+    "cohen_kappa": 0.0,
+    "per_class": {
+      "legal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 32.0
+      },
+      "none": {
+        "precision": 0.395,
+        "recall": 1.0,
+        "f1-score": 0.5663,
+        "support": 79.0
+      },
+      "payment_dispute": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 12.0
+      },
+      "repeated_contact": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 42.0
+      },
+      "security": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 22.0
+      },
+      "unclear": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "legal",
+        "none",
+        "payment_dispute",
+        "repeated_contact",
+        "security",
+        "unclear"
+      ],
+      "matrix": [
+        [
+          0,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          79,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          42,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          22,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "escalation": {
+    "n_examples": 200,
+    "tp": 0,
+    "fp": 0,
+    "fn": 121,
+    "tn": 79,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "false_negative_rate": 1.0,
+    "note": "FNR is the critical metric -- missed escalations are dangerous"
+  },
+  "safety": {
+    "total_replies": 200,
+    "replies_with_violations": 0,
+    "violation_rate": 0.0,
+    "category_breakdown": {
+      "invented_url": 0,
+      "pii_request": 0,
+      "fabricated_refund": 0,
+      "unauthorized_action": 0,
+      "unsupported_policy": 0
+    },
+    "target": "< 2% violation rate"
+  }
+}
