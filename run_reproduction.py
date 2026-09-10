@@ -87,7 +87,7 @@ def run_data_pipeline():
         create_split_manifest()
 
 
-def run_evaluation(cached: bool = True):
+def run_evaluation(cached: bool = True, subsample: int | None = None):
     """Run evaluation with baselines."""
     print("\n" + "="*60)
     print("Step 2: Evaluation")
@@ -109,6 +109,8 @@ def run_evaluation(cached: bool = True):
     ]
     if not cached:
         sys.argv.append("--force-refresh")
+    if subsample:
+        sys.argv.extend(["--subsample", str(subsample)])
     run_eval_main()
 
 
@@ -173,6 +175,10 @@ def main():
     parser = argparse.ArgumentParser(description="Reproduce headline results")
     parser.add_argument("--cached", action="store_true", help="Use cached outputs (no API key needed)")
     parser.add_argument("--live", action="store_true", help="Run with live API calls")
+    parser.add_argument(
+        "--subsample", type=int, default=None,
+        help="Subsample N examples from the test set (per assignment rule: subsample encouraged)"
+    )
     args = parser.parse_args()
 
     print("SpotifyCares AI Support Agent -- Reproduction Script")
@@ -188,7 +194,7 @@ def main():
     run_data_pipeline()
 
     # Run evaluation
-    run_evaluation(cached=(not args.live))
+    run_evaluation(cached=(not args.live), subsample=args.subsample)
 
     elapsed = time.time() - start
     print(f"\n{'='*60}")

@@ -35,9 +35,11 @@ def extract_brand(
     csv_path: str | Path = config.TWCS_CSV_PATH,
     brand: str = config.TARGET_BRAND,
     output_path: str | Path = config.SPOTIFY_RAW_JSONL,
+    subsample_rows: int | None = None,
 ) -> dict:
     """
     Extract all tweets involved in *brand* conversations.
+    Supports optional subsample_rows for fast test runs per assignment guidelines.
 
     Returns a summary dict with counts.
     """
@@ -47,6 +49,8 @@ def extract_brand(
 
     # ── Pass 1: discover relevant tweet IDs ──────────────────────────────
     print(f"[extract_brand] Pass 1 -- scanning for {brand} tweets ...")
+    if subsample_rows:
+        print(f"  [Subsample mode active: scanning max {subsample_rows:,} rows]")
     brand_tweet_ids: set[str] = set()  # IDs authored by brand
     related_ids: set[str] = set()       # IDs referenced by brand tweets
     total_rows = 0
@@ -67,6 +71,9 @@ def extract_brand(
                     related_ids.add(ref)
             if total_rows % 500_000 == 0:
                 print(f"  ... {total_rows:,} rows scanned")
+            if subsample_rows and total_rows >= subsample_rows:
+                print(f"  ... reached subsample limit of {subsample_rows:,} rows")
+                break
 
     target_ids = brand_tweet_ids | related_ids
     print(
@@ -78,12 +85,14 @@ def extract_brand(
     # ── Pass 2: extract matching tweets ──────────────────────────────────
     print("[extract_brand] Pass 2 -- extracting matching tweets ...")
     written = 0
+    p2_rows = 0
     with (
         open(csv_path, "r", encoding="utf-8", errors="replace") as fh,
         open(output_path, "w", encoding="utf-8") as out,
     ):
         reader = csv.DictReader(fh)
         for row in reader:
+            p2_rows += 1
             tid = row.get("tweet_id", "").strip()
             if tid in target_ids:
                 record = {
@@ -101,6 +110,8 @@ def extract_brand(
                 }
                 out.write(json.dumps(record, ensure_ascii=False) + "\n")
                 written += 1
+            if subsample_rows and p2_rows >= subsample_rows:
+                break
 
     summary = {
         "total_rows_scanned": total_rows,
@@ -124,6 +135,10 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output", default=str(config.SPOTIFY_RAW_JSONL), help="Output JSONL path"
     )
+    parser.add_argument(
+        "--subsample-rows", type=int, default=None,
+        help="Max CSV rows to scan for quick subsample verification"
+    )
     args = parser.parse_args()
-    result = extract_brand(args.csv, args.brand, args.output)
+    result = extract_brand(args.csv, args.brand, args.output, subsample_rows=args.subsample_rows)
     print(json.dumps(result, indent=2))

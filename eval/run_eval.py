@@ -257,6 +257,10 @@ def main():
         "--calibration", action="store_true",
         help="Run coverage-risk calibration on the dev set"
     )
+    parser.add_argument(
+        "--subsample", type=int, default=None,
+        help="Subsample N examples from the evaluation set (expected & encouraged by assignment)"
+    )
     args = parser.parse_args()
 
     test_set_path = Path(args.test_set)
@@ -269,6 +273,9 @@ def main():
         sys.exit(1)
 
     examples = load_eval_set(test_set_path)
+    if args.subsample and args.subsample > 0 and args.subsample < len(examples):
+        examples = examples[:args.subsample]
+        print(f"Subsampled to {len(examples)} examples (as requested by --subsample)")
     print(f"Loaded {len(examples)} test examples from {test_set_path}")
 
     all_metrics = {}
